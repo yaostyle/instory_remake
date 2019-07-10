@@ -126,7 +126,11 @@ class HighLight {
     if(this.items != null) {
       data['items'] = this.items.map((v)=>v.toJson()).toList();
     }
-
+    data['title'] = this.title;
+    data['created_at'] = this.createdAt;
+    data['prefetch_count'] = this.prefetchCount;
+    data['media_count'] = this.mediaCount;
+    return data;
   }
 
 }
